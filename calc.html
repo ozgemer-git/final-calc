@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ozgemer-calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class='toggle'>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <p>THEME:</p>
+        <div class="theme-toggle box-border">
+            <label class="radio-button">
+                <input class='radio-select' id="theme-1" name="toggle-state" type="radio" checked/>
+                <span class="checkmark"></span>
+            </label>
+            <label class="radio-button">
+                <input class='radio-select' id="theme-2" name="toggle-state" type="radio" />
+                <span class="checkmark"></span>
+            </label>
+            <label class="radio-button">
+                <input class='radio-select' id="theme-3" name="toggle-state" type="radio" />
+                <span class="checkmark"></span>
+            </label>      
+        </div>
+    </div>
+    <div class='main-flex-container'>
+        <div class='calc calc-flex'>
+            <div class='calc-display box-border calc-display-text'>
+                <input type="text" id='calc-text' class='full-display'/>
+            </div>
+            <div class='calc-buttons box-border' id='calc-keys'>
+                <div class='small-buttons-container'>
+                    <button class='small-button button'>7</button>
+                    <button class='small-button button'>8</button>
+                    <button class='small-button button'>9</button>
+                    <button class='small-button button blue-button' id="key-delete">DEL</button>
+                    <button class='small-button button'>4</button>
+                    <button class='small-button button'>5</button>
+                    <button class='small-button button'>6</button>
+                    <button class='small-button button' id="key-add">+</button>
+                    <button class='small-button button'>1</button>
+                    <button class='small-button button'>2</button>
+                    <button class='small-button button'>3</button>
+                    <button class='small-button button' id="key-sub">-</button>
+                    <button class='small-button button' id="key-decpoint">.</button>
+                    <button class='small-button button'>0</button>
+                    <button class='small-button button' id="key-div">/</button>
+                    <button class='small-button button' id="key-mul">X</button>
+                </div>
+                <div class='big-buttons-container'>
+                    <button class='big-button button blue-button' id="key-reset">RESET</button>
+                    <button class='big-button button red-button' id="key-result">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>
